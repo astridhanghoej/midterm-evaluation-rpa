@@ -1,0 +1,271 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="Main" VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="1158,2386.6666666666665" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>GlobalVariablesNamespace</x:String>
+      <x:String>GlobalConstantsNamespace</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>UiPath.UIAutomationNext.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Models.CV</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>UiPath.UIAutomationNext.Models.ExtractData</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities.Models</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>UiPath.Shared.Activities.Business</x:String>
+      <x:String>System.Security</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>PresentationCore</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>System.Collections</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.Common</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Drawing.Common</AssemblyReference>
+      <AssemblyReference>System.Drawing.Primitives</AssemblyReference>
+      <AssemblyReference>System.Linq</AssemblyReference>
+      <AssemblyReference>System.Net.Mail</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>System.Private.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
+      <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
+      <AssemblyReference>System.Reflection.DispatchProxy</AssemblyReference>
+      <AssemblyReference>System.Reflection.TypeExtensions</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Mail.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Testing.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.EventBasedAsync</AssemblyReference>
+      <AssemblyReference>Microsoft.Win32.Primitives</AssemblyReference>
+      <AssemblyReference>System.ComponentModel</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
+      <AssemblyReference>NPOI</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities.Design</AssemblyReference>
+      <AssemblyReference>System.Memory.Data</AssemblyReference>
+      <AssemblyReference>System.Console</AssemblyReference>
+      <AssemblyReference>System.Configuration.ConfigurationManager</AssemblyReference>
+      <AssemblyReference>System.Security.Permissions</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.Private.Uri</AssemblyReference>
+      <AssemblyReference>UiPath.Workflow</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities.Design</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities.ViewModels</AssemblyReference>
+      <AssemblyReference>System.Runtime.InteropServices</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="Main Sequence" sap:VirtualizedContainerService.HintSize="779.3333333333334,2084" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <Sequence.Variables>
+      <Variable x:TypeArguments="x:String" Name="MyName">
+        <Variable.Default>
+          <Literal x:TypeArguments="x:String">Astrid</Literal>
+        </Variable.Default>
+      </Variable>
+    </Sequence.Variables>
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <uix:NApplicationCard sap2010:Annotation.AnnotationText="Use Option&gt;Open&gt;Never to force it to use the application window when I activate it.&#xD;&#xA;&#xD;&#xA;Works only for attended robot." AttachMode="ByInstance" DisplayName="Use Browser Chrome: UiPath Academy" sap:VirtualizedContainerService.HintSize="580,2706" sap2010:WorkflowViewState.IdRef="NApplicationCard_4" InteractionMode="DebuggerApi" OpenMode="Never" ScopeGuid="f3490d2c-9535-4691-bd7f-42789a44ffff" Version="V2">
+      <uix:NApplicationCard.Body>
+        <ActivityAction x:TypeArguments="x:Object">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+          </ActivityAction.Argument>
+          <Sequence sap:VirtualizedContainerService.HintSize="546,2424.6666666666665" sap2010:WorkflowViewState.IdRef="Sequence_6">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Take survey'" sap:VirtualizedContainerService.HintSize="484,159.33333333333334" sap2010:WorkflowViewState.IdRef="NClick_9" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="f3490d2c-9535-4691-bd7f-42789a44ffff" Version="V3">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable BrowserURL="https://via.itslearning.com/survey?Accessibility=False&amp;allowedhtmlcodelevel=LessRestricted&amp;ApiSessionId=aaea7d5c014f468bb7e62229dd931ad3&amp;ContextRole=Instructor&amp;countrycode=DK&amp;CustomerId=3314&amp;educationsegment=0&amp;email=AHAN%40via.dk&amp;Encoding=utf8&amp;extrauserinformationpermissions=Username%2c+SyncPersonKey%2c+CustomString1&amp;FirstName=Astrid&amp;isextensionmanager=False&amp;itslearningenvironmentid=eu1&amp;itslearningversion=2024.6.2.4329&amp;Language=en-US&amp;LastName=Hangh%c3%b8j&amp;LearningObjectId=414118624&amp;LearningObjectInstanceId=562419333&amp;Locale=da-DK&amp;LocationId=8533&amp;myfilesfunctionality=True&amp;OlsonTimeZoneId=Europe%2fCopenhagen&amp;openedforpreview=False&amp;OpenedFromCourse=True&amp;Permissions=Read%2c+Participate&amp;personid=450879&amp;ReadOnly=False&amp;Role=Staff&amp;staticsversion=1.1.3.2872&amp;synckey=person_290164&amp;Use12HTimeFormat=False&amp;UserId=51325499&amp;UserName=AHAN%40viauc.dk&amp;userrightsprivacy=InitiateCommunicationToMembersOfCommonCoursesAndProjects%2c+InitiateCommunicationToEmployees%2c+InitiateCommunicationToLearners%2c+InitiateCommunicationToGuests%2c+SearchForMembersOfCommonCoursesAndProjects%2c+SearchForEmployees%2c+SearchForLearners%2c+SearchForGuests%2c+CommunicateExternally&amp;WindowsTimeZoneId=Central+European+Standard+Time&amp;Timestamp=2024-06-20T09:58:02&amp;Signature=c5a5fce9f13069de7819279f980e0b05" CvElementArea="1098, 1153, 214, 65" CvTextArea="1134, 1172, 141, 29" CvTextArgument="Take survey" CvType="Button" DesignTimeRectangle="1137, 1168, 136, 34" DesignTimeScaleFactor="1.875" ElementType="Text" FriendlyName="'Take survey'" FullSelectorArgument="&lt;webctrl id='ctl00_ContentAreaIframe' tag='IFRAME' /&gt;&lt;webctrl src='https://platform.itslearning.com/LoginSSO.aspx?AllowedHtmlCodeLe*' tag='IFRAME' /&gt;&lt;webctrl aaname='Take survey' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl id='ctl00_ContentAreaIframe' tag='IFRAME' /&gt;&lt;webctrl src='https://platform.itslearning.com/LoginSSO.aspx?AllowedHtmlCodeLe*' tag='IFRAME' /&gt;&lt;webctrl aaname='Take survey' tag='SPAN' type='' class='' check:innerText='Take survey' /&gt;" Guid="1f19816c-3a0e-4f1c-ad4c-bcea6cf53286" InformativeScreenshot="ee91dec5f7e12ae54bc936ec5554cd40.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Midterm Evaluation - itslearning' /&gt;" SearchSteps="FuzzySelector, CV" Version="V2" Visibility="Interactive">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                      <uix:Target CvElementArea="1098, 1153, 214, 65" CvTextArea="1134, 1172, 141, 29" CvTextArgument="Take survey" CvType="Button" DesignTimeRectangle="1100, 1155, 209, 59" ElementType="Button" FriendlyName="'Take survey'" FullSelectorArgument="&lt;webctrl id='ctl00_ContentAreaIframe' tag='IFRAME' /&gt;&lt;webctrl src='https://platform.itslearning.com/LoginSSO.aspx?AllowedHtmlCodeLe*' tag='IFRAME' /&gt;&lt;webctrl tag='BUTTON' /&gt;" FuzzySelectorArgument="&lt;webctrl id='ctl00_ContentAreaIframe' tag='IFRAME' /&gt;&lt;webctrl src='https://platform.itslearning.com/LoginSSO.aspx?AllowedHtmlCodeLe*' tag='IFRAME' /&gt;&lt;webctrl tag='BUTTON' type='button' class='prom-button prom-button__primary   ' aaname='Take survey' check:innerText='Take survey' /&gt;" SearchSteps="FuzzySelector, CV" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NClick.Target>
+            </uix:NClick>
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Answer'" sap:VirtualizedContainerService.HintSize="484,159.33333333333334" sap2010:WorkflowViewState.IdRef="NClick_11" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="f3490d2c-9535-4691-bd7f-42789a44ffff" Version="V3">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable BrowserURL="https://via.itslearning.com/survey?Accessibility=False&amp;allowedhtmlcodelevel=LessRestricted&amp;ApiSessionId=aaea7d5c014f468bb7e62229dd931ad3&amp;ContextRole=Instructor&amp;countrycode=DK&amp;CustomerId=3314&amp;educationsegment=0&amp;email=AHAN%40via.dk&amp;Encoding=utf8&amp;extrauserinformationpermissions=Username%2c+SyncPersonKey%2c+CustomString1&amp;FirstName=Astrid&amp;isextensionmanager=False&amp;itslearningenvironmentid=eu1&amp;itslearningversion=2024.6.2.4329&amp;Language=en-US&amp;LastName=Hangh%c3%b8j&amp;LearningObjectId=414118624&amp;LearningObjectInstanceId=562419333&amp;Locale=da-DK&amp;LocationId=8533&amp;myfilesfunctionality=True&amp;OlsonTimeZoneId=Europe%2fCopenhagen&amp;openedforpreview=False&amp;OpenedFromCourse=True&amp;Permissions=Read%2c+Participate&amp;personid=450879&amp;ReadOnly=False&amp;Role=Staff&amp;staticsversion=1.1.3.2872&amp;synckey=person_290164&amp;Use12HTimeFormat=False&amp;UserId=51325499&amp;UserName=AHAN%40viauc.dk&amp;userrightsprivacy=InitiateCommunicationToMembersOfCommonCoursesAndProjects%2c+InitiateCommunicationToEmployees%2c+InitiateCommunicationToLearners%2c+InitiateCommunicationToGuests%2c+SearchForMembersOfCommonCoursesAndProjects%2c+SearchForEmployees%2c+SearchForLearners%2c+SearchForGuests%2c+CommunicateExternally&amp;WindowsTimeZoneId=Central+European+Standard+Time&amp;Timestamp=2024-06-20T10:04:38&amp;Signature=6a48dd4da45cb736ae06ab61bbf3ee8a" CvElementArea="1099, 946, 1383, 237" CvType="InputBox" DesignTimeRectangle="1100, 950, 1382, 231" DesignTimeScaleFactor="1.875" ElementType="InputBox" FriendlyName="'TEXTAREA prom-input-rnd…'" FullSelectorArgument="&lt;webctrl id='ctl00_ContentAreaIframe' tag='IFRAME' /&gt;&lt;webctrl src='https://platform.itslearning.com/LoginSSO.aspx?AllowedHtmlCodeLe*' tag='IFRAME' /&gt;&lt;webctrl tag='TEXTAREA' /&gt;" FuzzySelectorArgument="&lt;webctrl id='ctl00_ContentAreaIframe' tag='IFRAME' /&gt;&lt;webctrl src='https://platform.itslearning.com/LoginSSO.aspx?AllowedHtmlCodeLe*' tag='IFRAME' /&gt;&lt;webctrl tag='TEXTAREA' type='' class='prom-input-field__input ' aaname='' /&gt;" Guid="ef5803b8-9fbc-4e1a-b0af-a6a9ce17802d" InformativeScreenshot="a0659aafb282f78dea45e112d6096fcf.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Midterm Evaluation - itslearning' /&gt;" SearchSteps="FuzzySelector, CV" Version="V2" Visibility="Interactive">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                      <uix:Target CvElementArea="1099, 946, 1383, 237" CvTextArea="1097, 899, 106, 28" CvTextArgument="Answer" CvType="InputBox" DesignTimeRectangle="1100, 890, 1382, 291" ElementType="Text" FriendlyName="'Answer'" FullSelectorArgument="&lt;webctrl id='ctl00_ContentAreaIframe' tag='IFRAME' /&gt;&lt;webctrl src='https://platform.itslearning.com/LoginSSO.aspx?AllowedHtmlCodeLe*' tag='IFRAME' /&gt;&lt;webctrl tag='LABEL' /&gt;" FuzzySelectorArgument="&lt;webctrl id='ctl00_ContentAreaIframe' tag='IFRAME' /&gt;&lt;webctrl src='https://platform.itslearning.com/LoginSSO.aspx?AllowedHtmlCodeLe*' tag='IFRAME' /&gt;&lt;webctrl tag='LABEL' type='' class='' aaname=' ' check:innerText='Answer' /&gt;" SearchSteps="FuzzySelector, CV" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NClick.Target>
+            </uix:NClick>
+            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'Answer'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="484,222.66666666666666" sap2010:WorkflowViewState.IdRef="NTypeInto_1" ScopeIdentifier="f3490d2c-9535-4691-bd7f-42789a44ffff" Text="[MyName]" Version="V3">
+              <uix:NTypeInto.Target>
+                <uix:TargetAnchorable BrowserURL="https://via.itslearning.com/survey?Accessibility=False&amp;allowedhtmlcodelevel=LessRestricted&amp;ApiSessionId=aaea7d5c014f468bb7e62229dd931ad3&amp;ContextRole=Instructor&amp;countrycode=DK&amp;CustomerId=3314&amp;educationsegment=0&amp;email=AHAN%40via.dk&amp;Encoding=utf8&amp;extrauserinformationpermissions=Username%2c+SyncPersonKey%2c+CustomString1&amp;FirstName=Astrid&amp;isextensionmanager=False&amp;itslearningenvironmentid=eu1&amp;itslearningversion=2024.6.2.4329&amp;Language=en-US&amp;LastName=Hangh%c3%b8j&amp;LearningObjectId=414118624&amp;LearningObjectInstanceId=562419333&amp;Locale=da-DK&amp;LocationId=8533&amp;myfilesfunctionality=True&amp;OlsonTimeZoneId=Europe%2fCopenhagen&amp;openedforpreview=False&amp;OpenedFromCourse=True&amp;Permissions=Read%2c+Participate&amp;personid=450879&amp;ReadOnly=False&amp;Role=Staff&amp;staticsversion=1.1.3.2872&amp;synckey=person_290164&amp;Use12HTimeFormat=False&amp;UserId=51325499&amp;UserName=AHAN%40viauc.dk&amp;userrightsprivacy=InitiateCommunicationToMembersOfCommonCoursesAndProjects%2c+InitiateCommunicationToEmployees%2c+InitiateCommunicationToLearners%2c+InitiateCommunicationToGuests%2c+SearchForMembersOfCommonCoursesAndProjects%2c+SearchForEmployees%2c+SearchForLearners%2c+SearchForGuests%2c+CommunicateExternally&amp;WindowsTimeZoneId=Central+European+Standard+Time&amp;Timestamp=2024-06-20T10:01:38&amp;Signature=34625c532608dda2e4cfecbb0c732a6f" CvElementArea="1101, 946, 1382, 236" CvType="InputBox" DesignTimeRectangle="1100, 950, 1382, 231" DesignTimeScaleFactor="1.875" ElementType="InputBox" FriendlyName="'TEXTAREA prom-input-rnd…'" FullSelectorArgument="&lt;webctrl id='ctl00_ContentAreaIframe' tag='IFRAME' /&gt;&lt;webctrl src='https://platform.itslearning.com/LoginSSO.aspx?AllowedHtmlCodeLe*' tag='IFRAME' /&gt;&lt;webctrl tag='TEXTAREA' /&gt;" FuzzySelectorArgument="&lt;webctrl id='ctl00_ContentAreaIframe' tag='IFRAME' /&gt;&lt;webctrl src='https://platform.itslearning.com/LoginSSO.aspx?AllowedHtmlCodeLe*' tag='IFRAME' /&gt;&lt;webctrl tag='TEXTAREA' type='' class='prom-input-field__input ' aaname='' /&gt;" Guid="4c1d5f66-4d54-473a-b149-192366e01494" InformativeScreenshot="6a0acc794ff7d9970458245365002086.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Midterm Evaluation - itslearning' /&gt;" SearchSteps="FuzzySelector, CV" Version="V2" Visibility="Interactive">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                      <uix:Target CvElementArea="1101, 946, 1382, 236" CvTextArea="1097, 899, 106, 27" CvTextArgument="Answer" CvType="InputBox" DesignTimeRectangle="1100, 890, 1382, 291" ElementType="Text" FriendlyName="'Answer'" FullSelectorArgument="&lt;webctrl id='ctl00_ContentAreaIframe' tag='IFRAME' /&gt;&lt;webctrl src='https://platform.itslearning.com/LoginSSO.aspx?AllowedHtmlCodeLe*' tag='IFRAME' /&gt;&lt;webctrl tag='LABEL' /&gt;" FuzzySelectorArgument="&lt;webctrl id='ctl00_ContentAreaIframe' tag='IFRAME' /&gt;&lt;webctrl src='https://platform.itslearning.com/LoginSSO.aspx?AllowedHtmlCodeLe*' tag='IFRAME' /&gt;&lt;webctrl tag='LABEL' type='' class='' aaname=' ' check:innerText='Answer' /&gt;" SearchSteps="FuzzySelector, CV" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NTypeInto.Target>
+            </uix:NTypeInto>
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Next'" sap:VirtualizedContainerService.HintSize="484,159.33333333333334" sap2010:WorkflowViewState.IdRef="NClick_10" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="f3490d2c-9535-4691-bd7f-42789a44ffff" Version="V3">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable BrowserURL="https://via.itslearning.com/survey?Accessibility=False&amp;allowedhtmlcodelevel=LessRestricted&amp;ApiSessionId=aaea7d5c014f468bb7e62229dd931ad3&amp;ContextRole=Instructor&amp;countrycode=DK&amp;CustomerId=3314&amp;educationsegment=0&amp;email=AHAN%40via.dk&amp;Encoding=utf8&amp;extrauserinformationpermissions=Username%2c+SyncPersonKey%2c+CustomString1&amp;FirstName=Astrid&amp;isextensionmanager=False&amp;itslearningenvironmentid=eu1&amp;itslearningversion=2024.6.2.4329&amp;Language=en-US&amp;LastName=Hangh%c3%b8j&amp;LearningObjectId=414118624&amp;LearningObjectInstanceId=562419333&amp;Locale=da-DK&amp;LocationId=8533&amp;myfilesfunctionality=True&amp;OlsonTimeZoneId=Europe%2fCopenhagen&amp;openedforpreview=False&amp;OpenedFromCourse=True&amp;Permissions=Read%2c+Participate&amp;personid=450879&amp;ReadOnly=False&amp;Role=Staff&amp;staticsversion=1.1.3.2872&amp;synckey=person_290164&amp;Use12HTimeFormat=False&amp;UserId=51325499&amp;UserName=AHAN%40viauc.dk&amp;userrightsprivacy=InitiateCommunicationToMembersOfCommonCoursesAndProjects%2c+InitiateCommunicationToEmployees%2c+InitiateCommunicationToLearners%2c+InitiateCommunicationToGuests%2c+SearchForMembersOfCommonCoursesAndProjects%2c+SearchForEmployees%2c+SearchForLearners%2c+SearchForGuests%2c+CommunicateExternally&amp;WindowsTimeZoneId=Central+European+Standard+Time&amp;Timestamp=2024-06-20T09:58:02&amp;Signature=c5a5fce9f13069de7819279f980e0b05" CvElementArea="1308, 1223, 156, 65" CvTextArea="1358, 1244, 60, 24" CvTextArgument="Next" CvType="Button" DesignTimeRectangle="1358, 1238, 57, 34" DesignTimeScaleFactor="1.875" ElementType="Text" FriendlyName="'Next'" FullSelectorArgument="&lt;webctrl id='ctl00_ContentAreaIframe' tag='IFRAME' /&gt;&lt;webctrl src='https://platform.itslearning.com/LoginSSO.aspx?AllowedHtmlCodeLe*' tag='IFRAME' /&gt;&lt;webctrl aaname='Next' parentid='form8008634' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl id='ctl00_ContentAreaIframe' tag='IFRAME' /&gt;&lt;webctrl src='https://platform.itslearning.com/LoginSSO.aspx?AllowedHtmlCodeLe*' tag='IFRAME' /&gt;&lt;webctrl aaname='Next' parentid='form8008634' tag='SPAN' type='' class='' check:innerText='Next' /&gt;" Guid="009743af-f76e-4071-97e2-46819d492e74" InformativeScreenshot="7918bc34c687277cd17e57651ec96f51.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Midterm Evaluation - itslearning' /&gt;" SearchSteps="FuzzySelector, CV" Version="V2" Visibility="Interactive">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                      <uix:Target CvElementArea="1308, 1223, 156, 65" CvTextArea="1358, 1244, 60, 24" CvTextArgument="Next" CvType="Button" DesignTimeRectangle="1311, 1226, 150, 59" ElementType="Button" FriendlyName="'Next'" FullSelectorArgument="&lt;webctrl id='ctl00_ContentAreaIframe' tag='IFRAME' /&gt;&lt;webctrl src='https://platform.itslearning.com/LoginSSO.aspx?AllowedHtmlCodeLe*' tag='IFRAME' /&gt;&lt;webctrl aaname='Next' tag='BUTTON' /&gt;" FuzzySelectorArgument="&lt;webctrl id='ctl00_ContentAreaIframe' tag='IFRAME' /&gt;&lt;webctrl src='https://platform.itslearning.com/LoginSSO.aspx?AllowedHtmlCodeLe*' tag='IFRAME' /&gt;&lt;webctrl aaname='Next' tag='BUTTON' type='button' class='prom-button prom-button__primary   ' check:innerText='Next' /&gt;" SearchSteps="FuzzySelector, CV" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NClick.Target>
+            </uix:NClick>
+            <ui:RepeatNumberOfTimesX DisplayName="Repeat Number of Times" sap:VirtualizedContainerService.HintSize="484,587.3333333333334" sap2010:WorkflowViewState.IdRef="RepeatNumberOfTimesX_1" NumberOfTimes="10" StartAt="1">
+              <ui:RepeatNumberOfTimesX.Body>
+                <ActivityAction x:TypeArguments="x:Int32">
+                  <ActivityAction.Argument>
+                    <DelegateInArgument x:TypeArguments="x:Int32" Name="CurrentItem" />
+                  </ActivityAction.Argument>
+                  <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="450,417.3333333333333" sap2010:WorkflowViewState.IdRef="Sequence_7">
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                    <ui:Check AlterIfDisabled="{x:Null}" ContinueOnError="{x:Null}" DelayAfter="{x:Null}" DelayBefore="{x:Null}" Action="Check" DisplayName="Check 'SPAN'" sap:VirtualizedContainerService.HintSize="388,107.33333333333333" sap2010:WorkflowViewState.IdRef="Check_1">
+                      <ui:Check.Target>
+                        <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="d9bc8cf6-077e-43bc-b77f-6371cde7ac1e" InformativeScreenshot="ca616fe191544031af541b1cf3eeb4f7" Selector="&lt;webctrl id='ctl00_ContentAreaIframe' tag='IFRAME' /&gt;&lt;webctrl src='https://platform.itslearning.com/LoginSSO.aspx?AllowedHtmlCodeLe*' tag='IFRAME' /&gt;&lt;webctrl tag='SPAN' idx='4' /&gt;">
+                          <ui:Target.TimeoutMS>
+                            <InArgument x:TypeArguments="x:Int32" />
+                          </ui:Target.TimeoutMS>
+                          <ui:Target.WaitForReady>
+                            <InArgument x:TypeArguments="ui:WaitForReady" />
+                          </ui:Target.WaitForReady>
+                        </ui:Target>
+                      </ui:Check.Target>
+                    </ui:Check>
+                    <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Next'" sap:VirtualizedContainerService.HintSize="388,159.33333333333334" sap2010:WorkflowViewState.IdRef="NClick_12" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="f3490d2c-9535-4691-bd7f-42789a44ffff" Version="V3">
+                      <uix:NClick.Target>
+                        <uix:TargetAnchorable BrowserURL="https://via.itslearning.com/survey?Accessibility=False&amp;allowedhtmlcodelevel=LessRestricted&amp;ApiSessionId=aaea7d5c014f468bb7e62229dd931ad3&amp;ContextRole=Instructor&amp;countrycode=DK&amp;CustomerId=3314&amp;educationsegment=0&amp;email=AHAN%40via.dk&amp;Encoding=utf8&amp;extrauserinformationpermissions=Username%2c+SyncPersonKey%2c+CustomString1&amp;FirstName=Astrid&amp;isextensionmanager=False&amp;itslearningenvironmentid=eu1&amp;itslearningversion=2024.6.2.4329&amp;Language=en-US&amp;LastName=Hangh%c3%b8j&amp;LearningObjectId=414118624&amp;LearningObjectInstanceId=562419333&amp;Locale=da-DK&amp;LocationId=8533&amp;myfilesfunctionality=True&amp;OlsonTimeZoneId=Europe%2fCopenhagen&amp;openedforpreview=False&amp;OpenedFromCourse=True&amp;Permissions=Read%2c+Participate&amp;personid=450879&amp;ReadOnly=False&amp;Role=Staff&amp;staticsversion=1.1.3.2872&amp;synckey=person_290164&amp;Use12HTimeFormat=False&amp;UserId=51325499&amp;UserName=AHAN%40viauc.dk&amp;userrightsprivacy=InitiateCommunicationToMembersOfCommonCoursesAndProjects%2c+InitiateCommunicationToEmployees%2c+InitiateCommunicationToLearners%2c+InitiateCommunicationToGuests%2c+SearchForMembersOfCommonCoursesAndProjects%2c+SearchForEmployees%2c+SearchForLearners%2c+SearchForGuests%2c+CommunicateExternally&amp;WindowsTimeZoneId=Central+European+Standard+Time&amp;Timestamp=2024-06-20T09:58:02&amp;Signature=c5a5fce9f13069de7819279f980e0b05" CvElementArea="1308, 1223, 156, 65" CvTextArea="1358, 1244, 60, 24" CvTextArgument="Next" CvType="Button" DesignTimeRectangle="1358, 1238, 57, 34" DesignTimeScaleFactor="1.875" ElementType="Text" FriendlyName="'Next'" FullSelectorArgument="&lt;webctrl id='ctl00_ContentAreaIframe' tag='IFRAME' /&gt;&lt;webctrl src='https://platform.itslearning.com/LoginSSO.aspx?AllowedHtmlCodeLe*' tag='IFRAME' /&gt;&lt;webctrl aaname='Next' parentid='form8008634' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl id='ctl00_ContentAreaIframe' tag='IFRAME' /&gt;&lt;webctrl src='https://platform.itslearning.com/LoginSSO.aspx?AllowedHtmlCodeLe*' tag='IFRAME' /&gt;&lt;webctrl aaname='Next' parentid='form8008634' tag='SPAN' type='' class='' check:innerText='Next' /&gt;" Guid="009743af-f76e-4071-97e2-46819d492e74" InformativeScreenshot="7918bc34c687277cd17e57651ec96f51.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Midterm Evaluation - itslearning' /&gt;" SearchSteps="FuzzySelector, CV" Version="V2" Visibility="Interactive">
+                          <uix:TargetAnchorable.Anchors>
+                            <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                              <uix:Target CvElementArea="1308, 1223, 156, 65" CvTextArea="1358, 1244, 60, 24" CvTextArgument="Next" CvType="Button" DesignTimeRectangle="1311, 1226, 150, 59" ElementType="Button" FriendlyName="'Next'" FullSelectorArgument="&lt;webctrl id='ctl00_ContentAreaIframe' tag='IFRAME' /&gt;&lt;webctrl src='https://platform.itslearning.com/LoginSSO.aspx?AllowedHtmlCodeLe*' tag='IFRAME' /&gt;&lt;webctrl aaname='Next' tag='BUTTON' /&gt;" FuzzySelectorArgument="&lt;webctrl id='ctl00_ContentAreaIframe' tag='IFRAME' /&gt;&lt;webctrl src='https://platform.itslearning.com/LoginSSO.aspx?AllowedHtmlCodeLe*' tag='IFRAME' /&gt;&lt;webctrl aaname='Next' tag='BUTTON' type='button' class='prom-button prom-button__primary   ' check:innerText='Next' /&gt;" SearchSteps="FuzzySelector, CV" />
+                            </scg:List>
+                          </uix:TargetAnchorable.Anchors>
+                        </uix:TargetAnchorable>
+                      </uix:NClick.Target>
+                    </uix:NClick>
+                  </Sequence>
+                </ActivityAction>
+              </ui:RepeatNumberOfTimesX.Body>
+            </ui:RepeatNumberOfTimesX>
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Answer'" sap:VirtualizedContainerService.HintSize="484,159.33333333333334" sap2010:WorkflowViewState.IdRef="NClick_13" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="f3490d2c-9535-4691-bd7f-42789a44ffff" Version="V3">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable BrowserURL="https://via.itslearning.com/survey?Accessibility=False&amp;allowedhtmlcodelevel=LessRestricted&amp;ApiSessionId=aaea7d5c014f468bb7e62229dd931ad3&amp;ContextRole=Instructor&amp;countrycode=DK&amp;CustomerId=3314&amp;educationsegment=0&amp;email=AHAN%40via.dk&amp;Encoding=utf8&amp;extrauserinformationpermissions=Username%2c+SyncPersonKey%2c+CustomString1&amp;FirstName=Astrid&amp;isextensionmanager=False&amp;itslearningenvironmentid=eu1&amp;itslearningversion=2024.6.2.4329&amp;Language=en-US&amp;LastName=Hangh%c3%b8j&amp;LearningObjectId=414118624&amp;LearningObjectInstanceId=562419333&amp;Locale=da-DK&amp;LocationId=8533&amp;myfilesfunctionality=True&amp;OlsonTimeZoneId=Europe%2fCopenhagen&amp;openedforpreview=False&amp;OpenedFromCourse=True&amp;Permissions=Read%2c+Participate&amp;personid=450879&amp;ReadOnly=False&amp;Role=Staff&amp;staticsversion=1.1.3.2872&amp;synckey=person_290164&amp;Use12HTimeFormat=False&amp;UserId=51325499&amp;UserName=AHAN%40viauc.dk&amp;userrightsprivacy=InitiateCommunicationToMembersOfCommonCoursesAndProjects%2c+InitiateCommunicationToEmployees%2c+InitiateCommunicationToLearners%2c+InitiateCommunicationToGuests%2c+SearchForMembersOfCommonCoursesAndProjects%2c+SearchForEmployees%2c+SearchForLearners%2c+SearchForGuests%2c+CommunicateExternally&amp;WindowsTimeZoneId=Central+European+Standard+Time&amp;Timestamp=2024-06-20T10:04:38&amp;Signature=6a48dd4da45cb736ae06ab61bbf3ee8a" CvElementArea="1099, 946, 1383, 237" CvType="InputBox" DesignTimeRectangle="1100, 950, 1382, 231" DesignTimeScaleFactor="1.875" ElementType="InputBox" FriendlyName="'TEXTAREA prom-input-rnd…'" FullSelectorArgument="&lt;webctrl id='ctl00_ContentAreaIframe' tag='IFRAME' /&gt;&lt;webctrl src='https://platform.itslearning.com/LoginSSO.aspx?AllowedHtmlCodeLe*' tag='IFRAME' /&gt;&lt;webctrl tag='TEXTAREA' /&gt;" FuzzySelectorArgument="&lt;webctrl id='ctl00_ContentAreaIframe' tag='IFRAME' /&gt;&lt;webctrl src='https://platform.itslearning.com/LoginSSO.aspx?AllowedHtmlCodeLe*' tag='IFRAME' /&gt;&lt;webctrl tag='TEXTAREA' type='' class='prom-input-field__input ' aaname='' /&gt;" Guid="ef5803b8-9fbc-4e1a-b0af-a6a9ce17802d" InformativeScreenshot="a0659aafb282f78dea45e112d6096fcf.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Midterm Evaluation - itslearning' /&gt;" SearchSteps="FuzzySelector, CV" Version="V2" Visibility="Interactive">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                      <uix:Target CvElementArea="1099, 946, 1383, 237" CvTextArea="1097, 899, 106, 28" CvTextArgument="Answer" CvType="InputBox" DesignTimeRectangle="1100, 890, 1382, 291" ElementType="Text" FriendlyName="'Answer'" FullSelectorArgument="&lt;webctrl id='ctl00_ContentAreaIframe' tag='IFRAME' /&gt;&lt;webctrl src='https://platform.itslearning.com/LoginSSO.aspx?AllowedHtmlCodeLe*' tag='IFRAME' /&gt;&lt;webctrl tag='LABEL' /&gt;" FuzzySelectorArgument="&lt;webctrl id='ctl00_ContentAreaIframe' tag='IFRAME' /&gt;&lt;webctrl src='https://platform.itslearning.com/LoginSSO.aspx?AllowedHtmlCodeLe*' tag='IFRAME' /&gt;&lt;webctrl tag='LABEL' type='' class='' aaname=' ' check:innerText='Answer' /&gt;" SearchSteps="FuzzySelector, CV" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NClick.Target>
+            </uix:NClick>
+            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'Answer'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="484,222.66666666666666" sap2010:WorkflowViewState.IdRef="NTypeInto_2" ScopeIdentifier="f3490d2c-9535-4691-bd7f-42789a44ffff" Text="Building software robots is great fun and the teacher is great" Version="V3">
+              <uix:NTypeInto.Target>
+                <uix:TargetAnchorable BrowserURL="https://via.itslearning.com/survey?Accessibility=False&amp;allowedhtmlcodelevel=LessRestricted&amp;ApiSessionId=aaea7d5c014f468bb7e62229dd931ad3&amp;ContextRole=Instructor&amp;countrycode=DK&amp;CustomerId=3314&amp;educationsegment=0&amp;email=AHAN%40via.dk&amp;Encoding=utf8&amp;extrauserinformationpermissions=Username%2c+SyncPersonKey%2c+CustomString1&amp;FirstName=Astrid&amp;isextensionmanager=False&amp;itslearningenvironmentid=eu1&amp;itslearningversion=2024.6.2.4329&amp;Language=en-US&amp;LastName=Hangh%c3%b8j&amp;LearningObjectId=414118624&amp;LearningObjectInstanceId=562419333&amp;Locale=da-DK&amp;LocationId=8533&amp;myfilesfunctionality=True&amp;OlsonTimeZoneId=Europe%2fCopenhagen&amp;openedforpreview=False&amp;OpenedFromCourse=True&amp;Permissions=Read%2c+Participate&amp;personid=450879&amp;ReadOnly=False&amp;Role=Staff&amp;staticsversion=1.1.3.2872&amp;synckey=person_290164&amp;Use12HTimeFormat=False&amp;UserId=51325499&amp;UserName=AHAN%40viauc.dk&amp;userrightsprivacy=InitiateCommunicationToMembersOfCommonCoursesAndProjects%2c+InitiateCommunicationToEmployees%2c+InitiateCommunicationToLearners%2c+InitiateCommunicationToGuests%2c+SearchForMembersOfCommonCoursesAndProjects%2c+SearchForEmployees%2c+SearchForLearners%2c+SearchForGuests%2c+CommunicateExternally&amp;WindowsTimeZoneId=Central+European+Standard+Time&amp;Timestamp=2024-06-20T10:01:38&amp;Signature=34625c532608dda2e4cfecbb0c732a6f" CvElementArea="1101, 946, 1382, 236" CvType="InputBox" DesignTimeRectangle="1100, 950, 1382, 231" DesignTimeScaleFactor="1.875" ElementType="InputBox" FriendlyName="'TEXTAREA prom-input-rnd…'" FullSelectorArgument="&lt;webctrl id='ctl00_ContentAreaIframe' tag='IFRAME' /&gt;&lt;webctrl src='https://platform.itslearning.com/LoginSSO.aspx?AllowedHtmlCodeLe*' tag='IFRAME' /&gt;&lt;webctrl tag='TEXTAREA' /&gt;" FuzzySelectorArgument="&lt;webctrl id='ctl00_ContentAreaIframe' tag='IFRAME' /&gt;&lt;webctrl src='https://platform.itslearning.com/LoginSSO.aspx?AllowedHtmlCodeLe*' tag='IFRAME' /&gt;&lt;webctrl tag='TEXTAREA' type='' class='prom-input-field__input ' aaname='' /&gt;" Guid="4c1d5f66-4d54-473a-b149-192366e01494" InformativeScreenshot="6a0acc794ff7d9970458245365002086.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Midterm Evaluation - itslearning' /&gt;" SearchSteps="FuzzySelector, CV" Version="V2" Visibility="Interactive">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                      <uix:Target CvElementArea="1101, 946, 1382, 236" CvTextArea="1097, 899, 106, 27" CvTextArgument="Answer" CvType="InputBox" DesignTimeRectangle="1100, 890, 1382, 291" ElementType="Text" FriendlyName="'Answer'" FullSelectorArgument="&lt;webctrl id='ctl00_ContentAreaIframe' tag='IFRAME' /&gt;&lt;webctrl src='https://platform.itslearning.com/LoginSSO.aspx?AllowedHtmlCodeLe*' tag='IFRAME' /&gt;&lt;webctrl tag='LABEL' /&gt;" FuzzySelectorArgument="&lt;webctrl id='ctl00_ContentAreaIframe' tag='IFRAME' /&gt;&lt;webctrl src='https://platform.itslearning.com/LoginSSO.aspx?AllowedHtmlCodeLe*' tag='IFRAME' /&gt;&lt;webctrl tag='LABEL' type='' class='' aaname=' ' check:innerText='Answer' /&gt;" SearchSteps="FuzzySelector, CV" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NTypeInto.Target>
+            </uix:NTypeInto>
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Next'" sap:VirtualizedContainerService.HintSize="484,159.33333333333334" sap2010:WorkflowViewState.IdRef="NClick_14" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="f3490d2c-9535-4691-bd7f-42789a44ffff" Version="V3">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable BrowserURL="https://via.itslearning.com/survey?Accessibility=False&amp;allowedhtmlcodelevel=LessRestricted&amp;ApiSessionId=aaea7d5c014f468bb7e62229dd931ad3&amp;ContextRole=Instructor&amp;countrycode=DK&amp;CustomerId=3314&amp;educationsegment=0&amp;email=AHAN%40via.dk&amp;Encoding=utf8&amp;extrauserinformationpermissions=Username%2c+SyncPersonKey%2c+CustomString1&amp;FirstName=Astrid&amp;isextensionmanager=False&amp;itslearningenvironmentid=eu1&amp;itslearningversion=2024.6.2.4329&amp;Language=en-US&amp;LastName=Hangh%c3%b8j&amp;LearningObjectId=414118624&amp;LearningObjectInstanceId=562419333&amp;Locale=da-DK&amp;LocationId=8533&amp;myfilesfunctionality=True&amp;OlsonTimeZoneId=Europe%2fCopenhagen&amp;openedforpreview=False&amp;OpenedFromCourse=True&amp;Permissions=Read%2c+Participate&amp;personid=450879&amp;ReadOnly=False&amp;Role=Staff&amp;staticsversion=1.1.3.2872&amp;synckey=person_290164&amp;Use12HTimeFormat=False&amp;UserId=51325499&amp;UserName=AHAN%40viauc.dk&amp;userrightsprivacy=InitiateCommunicationToMembersOfCommonCoursesAndProjects%2c+InitiateCommunicationToEmployees%2c+InitiateCommunicationToLearners%2c+InitiateCommunicationToGuests%2c+SearchForMembersOfCommonCoursesAndProjects%2c+SearchForEmployees%2c+SearchForLearners%2c+SearchForGuests%2c+CommunicateExternally&amp;WindowsTimeZoneId=Central+European+Standard+Time&amp;Timestamp=2024-06-20T09:58:02&amp;Signature=c5a5fce9f13069de7819279f980e0b05" CvElementArea="1308, 1223, 156, 65" CvTextArea="1358, 1244, 60, 24" CvTextArgument="Next" CvType="Button" DesignTimeRectangle="1358, 1238, 57, 34" DesignTimeScaleFactor="1.875" ElementType="Text" FriendlyName="'Next'" FullSelectorArgument="&lt;webctrl id='ctl00_ContentAreaIframe' tag='IFRAME' /&gt;&lt;webctrl src='https://platform.itslearning.com/LoginSSO.aspx?AllowedHtmlCodeLe*' tag='IFRAME' /&gt;&lt;webctrl aaname='Next' parentid='form8008634' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl id='ctl00_ContentAreaIframe' tag='IFRAME' /&gt;&lt;webctrl src='https://platform.itslearning.com/LoginSSO.aspx?AllowedHtmlCodeLe*' tag='IFRAME' /&gt;&lt;webctrl aaname='Next' parentid='form8008634' tag='SPAN' type='' class='' check:innerText='Next' /&gt;" Guid="009743af-f76e-4071-97e2-46819d492e74" InformativeScreenshot="7918bc34c687277cd17e57651ec96f51.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Midterm Evaluation - itslearning' /&gt;" SearchSteps="FuzzySelector, CV" Version="V2" Visibility="Interactive">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                      <uix:Target CvElementArea="1308, 1223, 156, 65" CvTextArea="1358, 1244, 60, 24" CvTextArgument="Next" CvType="Button" DesignTimeRectangle="1311, 1226, 150, 59" ElementType="Button" FriendlyName="'Next'" FullSelectorArgument="&lt;webctrl id='ctl00_ContentAreaIframe' tag='IFRAME' /&gt;&lt;webctrl src='https://platform.itslearning.com/LoginSSO.aspx?AllowedHtmlCodeLe*' tag='IFRAME' /&gt;&lt;webctrl aaname='Next' tag='BUTTON' /&gt;" FuzzySelectorArgument="&lt;webctrl id='ctl00_ContentAreaIframe' tag='IFRAME' /&gt;&lt;webctrl src='https://platform.itslearning.com/LoginSSO.aspx?AllowedHtmlCodeLe*' tag='IFRAME' /&gt;&lt;webctrl aaname='Next' tag='BUTTON' type='button' class='prom-button prom-button__primary   ' check:innerText='Next' /&gt;" SearchSteps="FuzzySelector, CV" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NClick.Target>
+            </uix:NClick>
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Submit answer'" sap:VirtualizedContainerService.HintSize="484,159.33333333333334" sap2010:WorkflowViewState.IdRef="NClick_15" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="f3490d2c-9535-4691-bd7f-42789a44ffff" Version="V3">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable BrowserURL="https://via.itslearning.com/survey?Accessibility=False&amp;allowedhtmlcodelevel=LessRestricted&amp;ApiSessionId=aaea7d5c014f468bb7e62229dd931ad3&amp;ContextRole=Instructor&amp;countrycode=DK&amp;CustomerId=3314&amp;educationsegment=0&amp;email=AHAN%40via.dk&amp;Encoding=utf8&amp;extrauserinformationpermissions=Username%2c+SyncPersonKey%2c+CustomString1&amp;FirstName=Astrid&amp;isextensionmanager=False&amp;itslearningenvironmentid=eu1&amp;itslearningversion=2024.6.2.4329&amp;Language=en-US&amp;LastName=Hangh%c3%b8j&amp;LearningObjectId=414118624&amp;LearningObjectInstanceId=562419333&amp;Locale=da-DK&amp;LocationId=8533&amp;myfilesfunctionality=True&amp;OlsonTimeZoneId=Europe%2fCopenhagen&amp;openedforpreview=False&amp;OpenedFromCourse=True&amp;Permissions=Read%2c+Participate%2c+Evaluate%2c+Modify&amp;personid=450879&amp;ReadOnly=False&amp;Role=Staff&amp;staticsversion=1.1.3.2872&amp;synckey=person_290164&amp;Use12HTimeFormat=False&amp;UserId=51325499&amp;UserName=AHAN%40viauc.dk&amp;userrightsprivacy=InitiateCommunicationToMembersOfCommonCoursesAndProjects%2c+InitiateCommunicationToEmployees%2c+InitiateCommunicationToLearners%2c+InitiateCommunicationToGuests%2c+SearchForMembersOfCommonCoursesAndProjects%2c+SearchForEmployees%2c+SearchForLearners%2c+SearchForGuests%2c+CommunicateExternally&amp;WindowsTimeZoneId=Central+European+Standard+Time&amp;Timestamp=2024-06-20T10:23:28&amp;Signature=ee5366c057f56cd5b64cec0d90a60b67" CvElementArea="1308, 1075, 250, 66" CvTextArea="1346, 1095, 176, 24" CvTextArgument="Submit answer" CvType="Button" DesignTimeRectangle="1348, 1091, 172, 34" DesignTimeScaleFactor="1.875" ElementType="Text" FriendlyName="'Submit answer'" FullSelectorArgument="&lt;webctrl id='ctl00_ContentAreaIframe' tag='IFRAME' /&gt;&lt;webctrl src='https://platform.itslearning.com/LoginSSO.aspx?AllowedHtmlCodeLe*' tag='IFRAME' /&gt;&lt;webctrl aaname='Submit answer' parentid='form8008646' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl id='ctl00_ContentAreaIframe' tag='IFRAME' /&gt;&lt;webctrl src='https://platform.itslearning.com/LoginSSO.aspx?AllowedHtmlCodeLe*' tag='IFRAME' /&gt;&lt;webctrl aaname='Submit answer' parentid='form8008646' tag='SPAN' type='' class='' check:innerText='Submit answer' /&gt;" Guid="595a0db1-aa77-467b-ae18-df21ca209c8c" InformativeScreenshot="a7e324cdfd1fe260a26bfda94b6d4148.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Midterm Evaluation - itslearning' /&gt;" SearchSteps="FuzzySelector, CV" Version="V2" Visibility="Interactive">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                      <uix:Target CvElementArea="1308, 1075, 250, 66" CvTextArea="1346, 1095, 176, 24" CvTextArgument="Submit answer" CvType="Button" DesignTimeRectangle="1311, 1078, 245, 59" ElementType="Button" FriendlyName="'Submit answer'" FullSelectorArgument="&lt;webctrl id='ctl00_ContentAreaIframe' tag='IFRAME' /&gt;&lt;webctrl src='https://platform.itslearning.com/LoginSSO.aspx?AllowedHtmlCodeLe*' tag='IFRAME' /&gt;&lt;webctrl aaname='Submit answer' tag='BUTTON' /&gt;" FuzzySelectorArgument="&lt;webctrl id='ctl00_ContentAreaIframe' tag='IFRAME' /&gt;&lt;webctrl src='https://platform.itslearning.com/LoginSSO.aspx?AllowedHtmlCodeLe*' tag='IFRAME' /&gt;&lt;webctrl aaname='Submit answer' tag='BUTTON' type='button' class='prom-button prom-button__primary   ' check:innerText='Submit answer' /&gt;" SearchSteps="FuzzySelector, CV" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NClick.Target>
+            </uix:NClick>
+          </Sequence>
+        </ActivityAction>
+      </uix:NApplicationCard.Body>
+      <uix:NApplicationCard.TargetApp>
+        <uix:TargetApp Area="-11, -11, 3862, 2122" BrowserType="Chrome" IconBase64="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" InformativeScreenshot="a11983ba478e6fa59b8b5a932981a1c6.jpg" Selector="&lt;html app='chrome.exe' title='Midterm Evaluation - itslearning' /&gt;" Title="UiPath Academy" />
+      </uix:NApplicationCard.TargetApp>
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+    </uix:NApplicationCard>
+    <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="717.3333333333334,144.66666666666666" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="[UiPath.Core.Activities.LogLevel.Info]" Message="[&quot;Done&quot;]" />
+  </Sequence>
+</Activity>
